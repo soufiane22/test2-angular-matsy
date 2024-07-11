@@ -1,0 +1,20 @@
+<div class="container">
+
+  <h4>List des film</h4>
+  <ul *ngIf="movies.length">
+    <li *ngFor="let movie of movies">
+      <div>
+        <span class="me-4"><b>Title </b>  </span>
+        <span>{{movie.title}}</span>
+      </div>
+      <div>
+        <span class="me-4"> <b>Description </b>  </span>
+        <span>{{movie.body}}</span>
+      </div>
+
+       <!-- {{ movie | json }} -->
+
+      </li>
+  </ul>
+
+</div>
